@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "regular", serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 32px;
+  margin: 0 auto;
+}
+
+nav .nav {
+  font-family: lexend;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav .logo .full_logo {
+  display: block;
+}
+nav .nav .logo .mobile_logo {
+  display: none;
+}
+nav .nav .nav_items {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+nav .nav .nav_items .mobile_menu_btn {
+  display: none;
+}
+nav .nav .nav_items .nav_menu {
+  display: flex;
+  gap: 32px;
+}
+nav .nav .nav_items .nav_menu li {
+  list-style-type: none;
+}
+nav .nav .nav_items .nav_menu li a {
+  color: #18181b;
+  text-decoration: none;
+}
+nav .nav .nav_items .nav_btns {
+  display: flex;
+  gap: 8px;
+}
+nav .nav .nav_items .nav_btns button {
+  border-radius: 4px;
+  padding: 9px 17px;
+  cursor: pointer;
+  color: #18181b;
+}
+nav .nav .nav_items .nav_btns button#login {
+  border: 1px solid #18181b;
+  background: transparent;
+}
+nav .nav .nav_items .nav_btns button#signup {
+  border: 1px solid #4cfdc7;
+  background: #4cfdc7;
+}
+@media screen and (max-width: 890px) {
+  nav .nav .logo svg {
+    width: 152px;
+    height: 16px;
+  }
+  nav .nav .nav_items {
+    gap: 16px;
+  }
+  nav .nav .nav_menu {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .nav .logo .full_logo {
+    display: none;
+  }
+  nav .nav .logo .mobile_logo {
+    display: block;
+  }
+  nav .nav .nav_items .nav_menu {
+    display: none;
+  }
+  nav .nav .nav_items .mobile_menu_btn {
+    display: block;
+  }
+}
+
+header .header {
+  font-size: lexend;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 130px;
+  gap: 64px;
+}
+header .header .header_left {
+  max-width: 659px;
+}
+header .header .header_left h1 {
+  font-size: 42px;
+  font-weight: 400;
+  color: #000000;
+}
+header .header .header_left p {
+  font-family: lexend;
+  margin: 34px 0px;
+  max-width: 461px;
+  color: #27272A;
+}
+header .header .header_left .header_left_btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+header .header .header_left .header_left_btns a {
+  display: block;
+  padding: 9px 33px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+header .header .header_left .header_left_btns a:nth-child(1) {
+  background: #4cfdc7;
+  color: #01271C;
+}
+header .header .header_left .header_left_btns a:nth-child(2) {
+  background: transparent;
+  color: #18181b;
+  border: 1px solid #18181b;
+}
+header .header .header_left .header_left_stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #27272A;
+}
+@media screen and (max-width: 768px) {
+  header .header {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 65px;
+  }
+  header .header .header_left .header_left_btns, header .header .header_left .header_left_stars {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .header {
+    padding-top: 32.5px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  header .header .header_left .header_left_btns {
+    flex-wrap: wrap;
+  }
+  header .header .header_left .header_left_btns a {
+    width: 100%;
+  }
+  header .header .header_right .header_right_img img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
