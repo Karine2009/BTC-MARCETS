@@ -2,27 +2,41 @@ $firstBlack: #18181b;
 $secondBlack: #27272A;
 $nativeBlack: #000000;
 $greenBlack: #01271C;
+$footerBlack:#3f3f46;
+
 $primary: #4cfdc7;
 $red: #f43f5e;
-$gray: #71717a;
+$darkgray: #71717a;
+$lightgray:#f4f4f5;
+$green:#10b981;
+$grayborder:#f4f4f5;
 
 $tablet: 1024px;
 $mobileL: 768px;
 $mobileM: 580px;
 $mobileS: 480px;
+$mobileXS: 380px;
 
 $br: 4px;
+$tablepadding:16px 0px;
 
+@font-face {
+    font-family: "regular";
+    src: url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+}
 
-    
-    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family:"bold" ;
+    src: url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+}
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "regular", serif;
+    font-family: "regular", sans-serif;
 }
 
 .container {
@@ -34,7 +48,6 @@ body {
 
 nav {
     .nav {
-        font-family: lexend;
         min-height: 80px;
         display: flex;
         justify-content: space-between;
@@ -115,7 +128,13 @@ nav {
         }
 
         @media screen and (max-width:$mobileL) {
+
             .logo {
+                svg {
+                    width: unset;
+                    height: unset;
+                }
+
                 .full_logo {
                     display: none;
                 }
@@ -132,6 +151,23 @@ nav {
 
                 .mobile_menu_btn {
                     display: block;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: $mobileXS) {
+            .nav_items {
+                .mobile_menu_btn {
+                    svg {
+                        width: 30px;
+                    }
+                }
+
+                .nav_btns {
+                    button {
+                        padding: 6px 12px;
+                    }
                 }
             }
 
@@ -157,7 +193,8 @@ header {
                 color: $nativeBlack;
             }
 
-            p {font-family: lexend;
+            p {
+                font-family: lexend;
                 margin: 34px 0px;
                 max-width: 461px;
                 color: $secondBlack;
@@ -205,11 +242,14 @@ header {
             padding-top: 65px;
 
             .header_left {
-                .header_left_btns, .header_left_stars {
+
+                .header_left_btns,
+                .header_left_stars {
                     justify-content: center;
                 }
             }
         }
+
         @media screen and (max-width:$mobileS) {
             padding-top: 32.5px;
             justify-content: center;
@@ -218,18 +258,206 @@ header {
 
             .header_left {
                 .header_left_btns {
-                    flex-wrap:wrap ;
-                    a{
+                    flex-wrap: wrap;
+
+                    a {
                         width: 100%;
                     }
                 }
             }
-            .header_right{
-              .header_right_img{
-                img{
-                    width:100% ;
+
+            .header_right {
+                .header_right_img {
+                    img {
+                        width: 100%;
+                    }
                 }
-            }  
+            }
+        }
+    }
+}
+
+main {
+    .markets_section {
+
+        margin-bottom: 128px;
+
+
+        .markets {
+            box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+            border-radius: $br;
+            padding: 32px;
+
+            .markets_nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 32px;
+
+                h4 {
+                    font-weight: 400;
+                    color: $darkgray;
+                    cursor: pointer;
+
+                    &.active{
+                        color: $firstBlack;
+                    }
+
+                }
+            }
+
+            .markets_table {
+                overflow: hidden;
+                overflow-x: auto;
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                   
+
+                    tbody {
+             
+
+                        tr {
+                            border-bottom: 1px solid $grayborder;
+
+                            th {
+                                padding: $tablepadding;
+                                text-align: left;
+                                color: $firstBlack;
+                                font-weight: 400;
+                                border-top: 1px solid $grayborder;
+                            }
+
+                            td {
+                                padding: $tablepadding;
+                                color: $firstBlack;
+                                font-weight: 400;
+
+                                
+
+                                span {
+
+                                    &.aud{
+                                        color: $lightgray;
+                                        font-size: 14px;
+                                    }
+                                    &.up{
+                                       color:$green; 
+                                    }
+                                    &.down{
+                                        color: $red;
+                                    }
+                                }
+                                &:nth-child(1)
+                                &:nth-child(3){
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 16px;
+                                }
+
+
+                                a{
+                                    display: block;
+                                    text-decoration: none;
+                                    padding: $tablepadding;
+                                    background: $primary;
+                                    border-radius: $br;
+                                    color: $greenBlack;
+                                    cursor: pointer;
+                                    text-align:center ;
+                                    font-size:12px ;
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width:$mobileL)
+                    {
+                        width: 800px;
+                        
+                    }
+                }
+
+            }
+            .see_all{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                margin-top: 22px;
+
+                a{
+                    color: $firstBlack;
+                    text-decoration: none;
+                }
+            }
+            @media screen and (max-width:460px){
+               .markets_nav{
+                flex-wrap: wrap;
+                margin-bottom: 16px;
+                gap: 16px;
+
+                h4{
+                    margin: 0px;
+                    width: 100%;
+                    text-align: center;
+                }
+               } 
+               .see_all{
+                flex-wrap: wrap;
+                svg{
+                    width: 100%;
+                }
+
+               }
+            }
+        }
+    
+        .why_btc_markets{
+            
+            margin-top: 64px;
+
+            h2{
+                text-align: center;
+                font-size: min(48px, max(25px + 2vw) );
+                font-weight: 400;
+                margin: 0;
+            }
+
+            .wbm_items{
+                display: flex;
+                justify-content: center;
+                gap: 64px;
+                margin-top: 128px;
+
+                .wbm_item{
+                    text-align: center;
+                    max-width: 250px;
+
+                    .wbm_icon{
+                        margin: 32px;
+                    }
+                    h4{
+
+                        margin: 0;
+                        color: $firstBlack;
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+
+                    p{
+                        color: $secondBlack;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                    }
+                }
+
+                @media screen and (max-width:$mobileL){
+                    flex-wrap: wrap;
+                    margin-top: 64px;
+                    
+                }
             }
         }
     }

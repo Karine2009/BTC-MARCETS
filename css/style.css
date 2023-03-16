@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "regular";
+  src: url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+}
+@font-face {
+  font-family: "bold";
+  src: url("https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap");
+}
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "regular", serif;
+  font-family: "regular", sans-serif;
 }
 
 .container {
@@ -14,7 +21,6 @@ body {
 }
 
 nav .nav {
-  font-family: lexend;
   min-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -76,6 +82,10 @@ nav .nav .nav_items .nav_btns button#signup {
   }
 }
 @media screen and (max-width: 768px) {
+  nav .nav .logo svg {
+    width: unset;
+    height: unset;
+  }
   nav .nav .logo .full_logo {
     display: none;
   }
@@ -87,6 +97,14 @@ nav .nav .nav_items .nav_btns button#signup {
   }
   nav .nav .nav_items .mobile_menu_btn {
     display: block;
+  }
+}
+@media screen and (max-width: 380px) {
+  nav .nav .nav_items .mobile_menu_btn svg {
+    width: 30px;
+  }
+  nav .nav .nav_items .nav_btns button {
+    padding: 6px 12px;
   }
 }
 
@@ -148,7 +166,8 @@ header .header .header_left .header_left_stars {
     flex-wrap: wrap;
     padding-top: 65px;
   }
-  header .header .header_left .header_left_btns, header .header .header_left .header_left_stars {
+  header .header .header_left .header_left_btns,
+  header .header .header_left .header_left_stars {
     justify-content: center;
   }
 }
@@ -167,5 +186,150 @@ header .header .header_left .header_left_stars {
   }
   header .header .header_right .header_right_img img {
     width: 100%;
+  }
+}
+
+main .markets_section {
+  margin-bottom: 128px;
+}
+main .markets_section .markets {
+  box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+  border-radius: 4px;
+  padding: 32px;
+}
+main .markets_section .markets .markets_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+main .markets_section .markets .markets_nav h4 {
+  font-weight: 400;
+  color: #71717a;
+  cursor: pointer;
+}
+main .markets_section .markets .markets_nav h4.active {
+  color: #18181b;
+}
+main .markets_section .markets .markets_table {
+  overflow: hidden;
+  overflow-x: auto;
+}
+main .markets_section .markets .markets_table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+main .markets_section .markets .markets_table table tbody tr {
+  border-bottom: 1px solid #f4f4f5;
+}
+main .markets_section .markets .markets_table table tbody tr th {
+  padding: 16px 0px;
+  text-align: left;
+  color: #18181b;
+  font-weight: 400;
+  border-top: 1px solid #f4f4f5;
+}
+main .markets_section .markets .markets_table table tbody tr td {
+  padding: 16px 0px;
+  color: #18181b;
+  font-weight: 400;
+}
+main .markets_section .markets .markets_table table tbody tr td span.aud {
+  color: #f4f4f5;
+  font-size: 14px;
+}
+main .markets_section .markets .markets_table table tbody tr td span.up {
+  color: #10b981;
+}
+main .markets_section .markets .markets_table table tbody tr td span.down {
+  color: #f43f5e;
+}
+main .markets_section .markets .markets_table table tbody tr td:nth-child(1) main .markets_section .markets .markets_table table tbody tr td:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+main .markets_section .markets .markets_table table tbody tr td a {
+  display: block;
+  text-decoration: none;
+  padding: 16px 0px;
+  background: #4cfdc7;
+  border-radius: 4px;
+  color: #01271C;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  main .markets_section .markets .markets_table table {
+    width: 800px;
+  }
+}
+main .markets_section .markets .see_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+main .markets_section .markets .see_all a {
+  color: #18181b;
+  text-decoration: none;
+}
+@media screen and (max-width: 460px) {
+  main .markets_section .markets .markets_nav {
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    gap: 16px;
+  }
+  main .markets_section .markets .markets_nav h4 {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  main .markets_section .markets .see_all {
+    flex-wrap: wrap;
+  }
+  main .markets_section .markets .see_all svg {
+    width: 100%;
+  }
+}
+main .markets_section .why_btc_markets {
+  margin-top: 64px;
+}
+main .markets_section .why_btc_markets h2 {
+  text-align: center;
+  font-size: min(48px, max(25px + 2vw));
+  font-weight: 400;
+  margin: 0;
+}
+main .markets_section .why_btc_markets .wbm_items {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 128px;
+}
+main .markets_section .why_btc_markets .wbm_items .wbm_item {
+  text-align: center;
+  max-width: 250px;
+}
+main .markets_section .why_btc_markets .wbm_items .wbm_item .wbm_icon {
+  margin: 32px;
+}
+main .markets_section .why_btc_markets .wbm_items .wbm_item h4 {
+  margin: 0;
+  color: #18181b;
+  font-weight: 400;
+  font-size: 20px;
+}
+main .markets_section .why_btc_markets .wbm_items .wbm_item p {
+  color: #27272A;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+@media screen and (max-width: 768px) {
+  main .markets_section .why_btc_markets .wbm_items {
+    flex-wrap: wrap;
+    margin-top: 64px;
   }
 }/*# sourceMappingURL=style.css.map */
