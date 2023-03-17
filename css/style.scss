@@ -465,4 +465,108 @@ main {
             }
         }
     }
+    .template_section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 128px;
+
+        &:nth-child(odd) {
+            .template_section_cover{
+                order: 1;
+            }
+            .template_section_content{
+                order: 2;
+            }
+            @media screen and (max-width:$tablet){
+               .template_section_cover{
+                order: 2;
+               }
+               .template_section_content{
+                order: 1;
+               } 
+            }
+        }
+
+        .template_section_content{
+            flex: 1 1 550px;
+
+            h4{
+                font-weight: 400;
+                color: $firstBlack;
+                font-size: 16px;
+                width: 100%;
+                text-transform: uppercase;
+            }
+
+            h2{
+                font-size: min(40px, max(20px + 2vw));
+                font-weight: 400;
+                color: $firstBlack;
+            }
+
+            .template_section_content_items{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 64px;
+                gap: 32px;
+
+                .template_section_content_item{
+                    flex: 1 1 calc(100%/3);
+
+                    h6{
+                        font-size: 16px;
+                        color: $firstBlack;
+                        font-weight: 400;
+                        margin: 8px 0px 18px 0px;
+                    }
+
+                    p{
+                        color: $secondBlack;
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        .template_section_cover{
+            flex: 1 1 550px;
+
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:$tablet){
+            flex-wrap: wrap;
+
+            .template_section_cover{
+                img{
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        @media screen and (max-width:$mobileM){
+            .template_section_content{
+                h2{
+                    text-align: center;
+                }
+                .template_section_content_items{
+                    .template_section_content_item{
+                        flex: 1 1 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    
 }

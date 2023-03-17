@@ -338,4 +338,85 @@ main .markets_section .why_btc_markets .wbm_items .wbm_item p {
     flex-wrap: wrap;
     margin-top: 64px;
   }
+}
+main .template_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 128px;
+}
+main .template_section:nth-child(odd) .template_section_cover {
+  order: 1;
+}
+main .template_section:nth-child(odd) .template_section_content {
+  order: 2;
+}
+@media screen and (max-width: 1024px) {
+  main .template_section:nth-child(odd) .template_section_cover {
+    order: 2;
+  }
+  main .template_section:nth-child(odd) .template_section_content {
+    order: 1;
+  }
+}
+main .template_section .template_section_content {
+  flex: 1 1 550px;
+}
+main .template_section .template_section_content h4 {
+  font-weight: 400;
+  color: #18181b;
+  font-size: 16px;
+  width: 100%;
+  text-transform: uppercase;
+}
+main .template_section .template_section_content h2 {
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  color: #18181b;
+}
+main .template_section .template_section_content .template_section_content_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 32px;
+}
+main .template_section .template_section_content .template_section_content_items .template_section_content_item {
+  flex: 1 1 33.3333333333%;
+}
+main .template_section .template_section_content .template_section_content_items .template_section_content_item h6 {
+  font-size: 16px;
+  color: #18181b;
+  font-weight: 400;
+  margin: 8px 0px 18px 0px;
+}
+main .template_section .template_section_content .template_section_content_items .template_section_content_item p {
+  color: #27272A;
+  font-size: 15px;
+  line-height: 24px;
+}
+main .template_section .template_section_cover {
+  flex: 1 1 550px;
+}
+main .template_section .template_section_cover img {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  main .template_section {
+    flex-wrap: wrap;
+  }
+  main .template_section .template_section_cover img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .template_section .template_section_content h2 {
+    text-align: center;
+  }
+  main .template_section .template_section_content .template_section_content_items .template_section_content_item {
+    flex: 1 1 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
