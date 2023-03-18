@@ -419,4 +419,77 @@ main .template_section .template_section_cover img {
     flex: 1 1 100%;
     text-align: center;
   }
+}
+main .vip_program_section {
+  padding-top: 128px;
+  background-color: #fafafa;
+}
+main .vip_program_section .container .vip_program_content {
+  max-width: 710px;
+  margin: 0 auto;
+  text-align: center;
+  color: #18181b;
+}
+main .vip_program_section .container .vip_program_content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+main .vip_program_section .container .vip_program_content h2 {
+  font-weight: 400;
+  font-size: min(40px, max(20px + 2vw));
+  letter-spacing: 0.1px;
+  margin: 16px 0px 32px 0px;
+}
+main .vip_program_section .container .vip_program_content p {
+  color: #27272A;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 48px;
+}
+main .vip_program_section .container .vip_program_content .vip_program_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+main .vip_program_section .container .vip_program_content .vip_program_items .vip_program_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .vip_program_section .container .vip_program_content .vip_program_items .vip_program_item h6 {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  main .vip_program_section .container .vip_program_content .vip_program_items {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .vip_program_section .container .vip_program_content .vip_program_items {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main .vip_program_section .container .vip_program_content .vip_program_items .vip_program_item {
+    gap: 4px;
+  }
+  main .vip_program_section .container .vip_program_content .vip_program_items .vip_program_item h6 {
+    font-size: 15px;
+  }
+}
+main .vip_program_section .container .vip_program_content a {
+  display: block;
+  text-decoration: none;
+  padding: 9px 36px;
+  color: #18181b;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto 64px auto;
 }/*# sourceMappingURL=style.css.map */

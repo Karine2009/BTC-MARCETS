@@ -567,6 +567,91 @@ main {
 
     }
 
+    .vip_program_section{
+        padding-top: 128px;
+        background-color: #fafafa;
 
-    
+        .container{
+            .vip_program_content{
+                max-width: 710px;
+                margin: 0 auto;
+                text-align: center;
+                color: $firstBlack;
+
+                h4{
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0;
+                }
+
+                h2{
+                    font-weight: 400;
+                    font-size: min(40px, max(20px + 2vw));
+                    letter-spacing: 0.1px;
+                    margin: 16px 0px 32px 0px;
+                }
+
+                p{
+                    color: $secondBlack;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 48px;
+                }
+
+                .vip_program_items{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 64px;
+                    margin-bottom: 64px;
+
+                    .vip_program_item{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        h6{
+                            font-weight: 400;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            margin: 0;
+                        }
+                    }
+
+                    @media screen and (max-width:$mobileL){
+                        flex-wrap: wrap;
+                    }
+
+                    @media screen and (max-width:$mobileM){
+                        gap: 32px;
+                    }
+
+                    @media screen and (max-width:$mobileXS){
+                       .vip_program_item{
+                        gap: 4px;
+
+                        h6{
+                            font-size: 15px;
+                        }
+
+                       } 
+                    }
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 9px 36px;
+                    color: $firstBlack;
+                    border-radius: $br;
+                    width: fit-content;
+                    margin: 0px auto 64px auto;
+                }
+            }
+
+
+        }
+    }
+
+
+
 }
