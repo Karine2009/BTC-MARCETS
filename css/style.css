@@ -265,6 +265,7 @@ main .markets_section .markets .markets_table table tbody tr td a {
   cursor: pointer;
   text-align: center;
   font-size: 12px;
+  margin: 0px 0px 0px auto;
 }
 @media screen and (max-width: 768px) {
   main .markets_section .markets .markets_table table {
@@ -492,4 +493,106 @@ main .vip_program_section .container .vip_program_content a {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px auto 64px auto;
+  border: 1px solid #18181b;
+}
+main .vip_program_section .container .vip_program_content a:hover {
+  background: #01271C;
+  border-color: #01271C;
+  color: #fff;
+}
+main .vip_program_section .container .vip_program_cover img {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  main .vip_program_section {
+    padding-top: 64px;
+  }
+}
+main .tree_easy_steps_section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+@media screen and (max-width: 768px) {
+  main .tree_easy_steps_section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+main .tree_easy_steps_section .tree_easy_steps {
+  max-width: 900px;
+  margin: 0 auto;
+}
+main .tree_easy_steps_section .tree_easy_steps h2 {
+  text-align: center;
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  margin: 0px 0px 64px 0px;
+}
+main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items .tree_easy_steps_item {
+  text-align: center;
+  width: 278px;
+}
+main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items .tree_easy_steps_item .icon {
+  padding: 16px;
+  background: #FCFBF8;
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items .tree_easy_steps_item h6 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 16px 0px;
+}
+main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items .tree_easy_steps_item p {
+  color: #27272A;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_items {
+    gap: 32px;
+  }
+}
+main .tree_easy_steps_section .tree_easy_steps a {
+  display: block;
+  text-decoration: none;
+  padding: 9px 33px;
+  background: #4cfdc7;
+  color: #01271C;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  margin: 0 auto 32px auto;
+  transition: 0.3s;
+}
+main .tree_easy_steps_section .tree_easy_steps a:hover {
+  background: #10b981;
+  border-color: #10b981;
+  color: #fff;
+}
+main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #27272A;
 }/*# sourceMappingURL=style.css.map */
