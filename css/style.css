@@ -595,4 +595,246 @@ main .tree_easy_steps_section .tree_easy_steps .tree_easy_steps_stars {
      -moz-user-select: none;
           user-select: none;
   color: #27272A;
+}
+main .trade__on__the__go h2 {
+  text-align: center;
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  margin: 0px 0px 32px 0px;
+}
+main .trade__on__the__go p {
+  color: #27272A;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+}
+main .trade__on__the__go .totg__store {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+@media screen and (max-width: 580px) {
+  main .trade__on__the__go .totg__store {
+    flex-wrap: wrap;
+  }
+}
+main .trade__on__the__go .totg__store .app__store img,
+main .trade__on__the__go .totg__store .google__play img {
+  display: block;
+  width: 150px;
+  height: 50px;
+}
+main .trade__on__the__go .totg__store .app__store .app__store__stars,
+main .trade__on__the__go .totg__store .app__store .google__play__stars,
+main .trade__on__the__go .totg__store .google__play .app__store__stars,
+main .trade__on__the__go .totg__store .google__play .google__play__stars {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+main .trade__on__the__go .totg__store .app__store .app__store__stars img,
+main .trade__on__the__go .totg__store .app__store .google__play__stars img,
+main .trade__on__the__go .totg__store .google__play .app__store__stars img,
+main .trade__on__the__go .totg__store .google__play .google__play__stars img {
+  width: unset;
+  height: unset;
+}
+main .trade__on__the__go a {
+  display: block;
+  text-decoration: none;
+  padding: 9px 33px;
+  color: #18181b;
+  border: 1px solid #18181b;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 32px auto 0px auto;
+  transition: 0.3s;
+}
+main .trade__on__the__go a:hover {
+  background: #01271C;
+  border-color: #01271C;
+  color: #fff;
+}
+main .latest__news__section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+@media screen and (max-width: 768px) {
+  main .latest__news__section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+main .latest__news__section h2 {
+  text-align: center;
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  margin: 0px 0px 32px 0px;
+}
+main .latest__news__section .latest__news__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+main .latest__news__section .latest__news__items .latest__news__item {
+  box-shadow: 0px 0px 32px rgba(9, 24, 26, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover {
+  max-width: 357px;
+  max-height: 148px;
+  overflow: hidden;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  padding: 0px 16px;
+}
+@media screen and (max-width: 380px) {
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
+    flex-wrap: wrap;
+  }
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p {
+    width: 100%;
+    text-align: center;
+  }
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child {
+    margin-bottom: 8px;
+  }
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p {
+  margin: 0;
+  color: #18181b;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child {
+  background: #bdffeb;
+  padding: 6px;
+  border-radius: 15px;
+}
+main .latest__news__section .latest__news__items .latest__news__item h4 {
+  font-size: min(24px, max(12px + 2vw));
+  margin: 0;
+  font-weight: 400;
+  max-width: 350px;
+  padding: 0px 16px;
+}
+main .latest__news__section .latest__news__items .latest__news__item h4 a {
+  color: #18181b;
+  text-decoration: none;
+}
+main .latest__news__section .latest__news__items .latest__news__item .read__more {
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #18181b;
+  padding: 0px 16px 16px 16px;
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover {
+  box-shadow: 0px 0px 32px rgba(9, 24, 26, 0.3);
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover .latest__news__item__cover img {
+  transform: scale(1.1);
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover h4 a {
+  color: #01271C;
+}
+main .latest__news__section .latest__news__items .latest__news__item:hover .read__more {
+  color: #10b981;
+}
+@media screen and (max-width: 1024px) {
+  main .latest__news__section .latest__news__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main .latest__news__section .check__out__link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #18181b;
+  margin-bottom: 64px;
+}
+main .latest__news__section .check__out__link:hover {
+  text-decoration: underline;
+}
+main .latest__news__section .social {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main .latest__news__section .social {
+    flex-wrap: wrap;
+  }
+}
+main .latest__news__section .social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #18181b;
+  transition: 0.3s;
+}
+main .latest__news__section .social a svg path {
+  transition: 0.3s;
+}
+main .latest__news__section .social a:hover {
+  color: #10b981;
+}
+main .latest__news__section .social a:hover svg path {
+  fill: #10b981;
+}
+main .before__footer h2 {
+  text-align: center;
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  margin: 0 auto 32px auto;
+  max-width: 420px;
+}
+main .before__footer a {
+  display: block;
+  text-decoration: none;
+  padding: 9px 30px;
+  font-size: 16px;
+  margin: 0 auto 32px auto;
+  color: #01271C;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #4cfdc7;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+main .before__footer a:hover {
+  background: #10b981;
+  border-color: #10b981;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  main .markets_section {
+    margin-bottom: 64px;
+  }
+  main .markets_section .template_section_content h4 {
+    text-align: center;
+  }
+  main .markets_section .why_btc_markets .wbm_items {
+    gap: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
