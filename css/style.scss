@@ -1071,3 +1071,126 @@ main {
         }
     }
 }
+
+footer {
+
+    margin-top: 128px;
+
+    .footer {
+        display: flex;
+
+        gap: 64px;
+
+        .footer__item {
+            flex: 1 1 227px;
+
+            h4 {
+                margin-top: 0;
+                margin-bottom: 32px;
+                color: $firstBlack;
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            ul {
+                li {
+                    list-style-type: none;
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: $footerBlack;
+                        margin-bottom: 16px;
+
+                        svg {
+                            path {
+                                fill: $footerBlack;
+                            }
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    img {
+                        width: 120px;
+                        height: 40px;
+                        display: block;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:$tablet) {
+            flex-wrap: wrap;
+
+        }
+
+        @media screen and (max-width:$mobileL) {
+            text-align: center;
+
+            .footer__item {
+                flex: 1 1 100%;
+
+                li {
+                    img {
+                        margin: 0px auto 8px auto;
+                    }
+                }
+
+
+                &:nth-child(4) {
+                    li {
+                        a {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer__info {
+        text-align: center;
+        font-size: 14px;
+        color: $secondBlack;
+        margin-top: 128px;
+
+        p {
+            margin: 0;
+        }
+
+        .footer__info__top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 16px;
+
+            @media screen and (max-width:$mobileL) {
+                flex-wrap: wrap;
+                gap: 16px;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        .footer__info__bottom {
+            font-size: 12px;
+        }
+    }
+}

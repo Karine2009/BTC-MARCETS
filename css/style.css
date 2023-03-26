@@ -837,4 +837,94 @@ main .before__footer a:hover {
   main .markets_section .why_btc_markets .wbm_items {
     gap: 32px;
   }
+}
+
+footer {
+  margin-top: 128px;
+}
+footer .footer {
+  display: flex;
+  gap: 64px;
+}
+footer .footer .footer__item {
+  flex: 1 1 227px;
+}
+footer .footer .footer__item h4 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #18181b;
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .footer .footer__item ul li {
+  list-style-type: none;
+}
+footer .footer .footer__item ul li a {
+  display: block;
+  text-decoration: none;
+  color: #3f3f46;
+  margin-bottom: 16px;
+}
+footer .footer .footer__item ul li a svg path {
+  fill: #3f3f46;
+}
+footer .footer .footer__item ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer .footer__item ul li img {
+  width: 120px;
+  height: 40px;
+  display: block;
+}
+footer .footer .footer__item:nth-child(4) li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer {
+    text-align: center;
+  }
+  footer .footer .footer__item {
+    flex: 1 1 100%;
+  }
+  footer .footer .footer__item li img {
+    margin: 0px auto 8px auto;
+  }
+  footer .footer .footer__item:nth-child(4) li a {
+    justify-content: center;
+  }
+}
+footer .footer__info {
+  text-align: center;
+  font-size: 14px;
+  color: #27272A;
+  margin-top: 128px;
+}
+footer .footer__info p {
+  margin: 0;
+}
+footer .footer__info .footer__info__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__info .footer__info__top {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  footer .footer__info .footer__info__top p {
+    width: 100%;
+  }
+}
+footer .footer__info .footer__info__bottom {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
