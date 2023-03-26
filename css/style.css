@@ -855,6 +855,7 @@ footer .footer .footer__item h4 {
   color: #18181b;
   font-weight: 400;
   font-size: 16px;
+  cursor: pointer;
 }
 footer .footer .footer__item ul li {
   list-style-type: none;
@@ -864,6 +865,7 @@ footer .footer .footer__item ul li a {
   text-decoration: none;
   color: #3f3f46;
   margin-bottom: 16px;
+  width: 200px;
 }
 footer .footer .footer__item ul li a svg path {
   fill: #3f3f46;

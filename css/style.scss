@@ -1083,6 +1083,7 @@ footer {
 
         .footer__item {
             flex: 1 1 227px;
+            
 
             h4 {
                 margin-top: 0;
@@ -1090,6 +1091,8 @@ footer {
                 color: $firstBlack;
                 font-weight: 400;
                 font-size: 16px;
+                cursor: pointer;
+
             }
 
             ul {
@@ -1101,6 +1104,7 @@ footer {
                         text-decoration: none;
                         color: $footerBlack;
                         margin-bottom: 16px;
+                        width: 200px;
 
                         svg {
                             path {
@@ -1170,6 +1174,7 @@ footer {
 
         p {
             margin: 0;
+            
         }
 
         .footer__info__top {
@@ -1178,6 +1183,7 @@ footer {
             align-items: center;
             gap: 32px;
             margin-bottom: 16px;
+            
 
             @media screen and (max-width:$mobileL) {
                 flex-wrap: wrap;
